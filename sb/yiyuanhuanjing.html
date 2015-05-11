@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>北京桐君中医院</title>
+    <meta name="Keywords" content="北京桐君中医院">
+    <meta name="Description" content="北京桐君中医院">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <script src="js/jQuery.1.8.2.min.js"></script>
+    <script src="js/lrtk.js"></script>
+    <script type="text/javascript">
+        function o_navbox($id) {
+            for (var $i = 1; $i <= 7; $i++) {
+                if ($i != $id) {
+                    document.getElementById('nav_box' + $i).style.display = "none";
+                } else {
+                    document.getElementById('nav_box' + $i).style.display = "block";
+                }
+            }
+        }
+        function c_navbox($id) {
+            if ($i = $id) {
+                document.getElementById('nav_box' + $i).style.display = "none";
+            }
+        }
+
+    </script>
+    <style>
+
+        .lightBox{margin-left:50px;width:750px;position: relative;height: 580px;padding: 10px 0;}
+        .lightBox ul{width: 650px}
+        .lightBox li{height: 100px;width: 150px;margin:15px 15px;float: left;overflow: hidden;display: inline;}
+        .lightBox li img{height: 100px;width: 150px; cursor:pointer;}
+        .lightBox b{float:left;position: relative;top:117px;right:96px;}
+        /**弹出层样式***/
+        .mask{height: 100%;width: 100%;filter:alpha(opacity:0);opacity: 0;background: #000;position:relative;z-index: 1;}
+        .popup{background:#fff url(./images/loading.gif) no-repeat center;border: 10px solid #fff;position: fixed;top:50%;left:50%;z-index: 2;;overflow:hidden;width: 320px;height: 240px}
+        .popup img{height: auto;width: auto;}
+        .btn{position: absolute;right: 0;top:0;height: 100%;width: 50%;cursor: pointer;}
+        .prev{left: 0;background: url(./images/lightbox-btn-prev.gif) no-repeat  0 50px;}
+        .next{background: url(./images/lightbox-btn-next.gif) no-repeat  right 50px;}
+
+        .popupBottom{position: relative;z-index: 3;margin-top:8px}
+        .popupTitle,.popupClose{float: right;}
+        .popupTitle{width:100%;line-height: 18px;color: #543424;font-family: Arial;font-size: 12px;margin-right: -81px;width: 100%;_margin:-22px 0 0 0}
+        .popupTitleTxt{float: left;margin-right: 126px}
+        .popupClose{margin-right:15px;height: 22px;width: 66px;background: url(./images/lightbox-btn-close.gif) no-repeat;cursor: pointer;position: relative;z-index: 4}
+    </style>
+
+</head>
+<body>
+<div class="wrapper">
+    <!--头部-->
+    <div class="head">
+        <div class="logo">
+            <img src="images/nav.jpg">
+        </div>
+    </div>
+    <!--菜单-->
+    <div id="box">
+        <div id="nav">
+            <ul>
+                <li>
+                    <a href="index.html">首页</a>
+                </li>
+                <li onmouseover="o_navbox(1)" onmouseout="c_navbox(1)">
+                    <a href="hospital.html">医院概况</a>
+
+                    <div id="nav_box1" class="nav_box" style="display:none;">
+                        <em></em>
+                        <span class="nav_img">
+                            <a href="hospital.html">
+                                <img src="images/map.jpg" alt="北京桐君中医院">
+                            </a>
+                        </span>
+
+                        <p class="nav_list">
+                            <a href="yiyuanjianjie.html">医院简介</a>
+                            <a href="yuanchangzhici.html">院长致辞</a>
+                            <a href="qiyuan.html">起源追溯</a>
+
+                            <a href="yiyuanhuanjing.html">医院环境</a>
+                        </p>
+                    </div>
+                </li>
+                <li onmouseover="o_navbox(2)" onmouseout="c_navbox(2)">
+                    <a href="wutongyuanbao.html">新闻中心</a>
+
+                    <div id="nav_box2" class="nav_box" style="display:none;">
+                        <em></em>
+                        <span class="nav_img">
+                            <a href="wutongyuanbao.html">
+                                <img src="images/s1.jpg" alt="北京桐君中医院">
+                            </a>
+                      </span>
+
+                        <p class="nav_list">
+                            <a href="wutongyuanbao.html">桐君院报</a>
+                            <a href="xinwendongtai.html">新闻动态</a>
+                            <a href="javascript:;">媒体报道</a>
+                        </p>
+                    </div>
+                </li>
+                <li onmouseover="o_navbox(3)" onmouseout="c_navbox(3)">
+                    <a href="gutouhuaisi.html">特色诊疗</a>
+
+                    <div id="nav_box3" class="nav_box" style="display:none;">
+                        <em></em>
+                        <span class="nav_img">
+                                    <a href="gutouhuaisi.html">
+                                        <img src="images/t1.jpg">
+                                    </a></span>
+                        <a href="gutouhuaisi.html">股骨头坏死</a>
+                        <a href="feiai.html">肺瘤</a>
+                        <a href="leifengshi.html">类风湿 </a>
+                        <a href="shenbingzonghengzheng.html">肾病综合症</a>
+                        <a href="yiyuzheng.html">抑郁症</a>
+                        <a href="buyunbuyu.html">不孕不育</a>
+                        <a href="hongbanlangzheng.html">红斑狼症</a>
+                        <a href="gongjingai.html">宫颈癌</a>
+                        <a href="weiai.html">胃癌</a>
+                        <a href="linbaliu.html">淋巴瘤</a>
+                    </div>
+                </li>
+                <li onmouseover="o_navbox(4)" onmouseout="c_navbox(4)">
+                    <a href="kexueyuanjiu.html">科学研究</a>
+
+                    <div id="nav_box4" class="nav_box" style="display:none;">
+                        <em></em>
+                       <span class="nav_img">
+                                    <a href="kexueyuanjiu.html">
+                                        <img src="images/t4.jpg">
+                                    </a></span>
+                        <a href="kexueyuanjiu.html">科学研究</a>
+                    </div>
+                </li>
+                <li onmouseover="o_navbox(5)" onmouseout="c_navbox(5)">
+                    <a href="jiangkangbaojian.html">健康保健</a>
+
+                    <div id="nav_box5" class="nav_box" style="display:none;">
+                        <em></em>
+        <span class="nav_img">
+                                    <a href="jiangkangbaojian.html">
+                                        <img src="images/t6.jpg">
+                                    </a></span>
+                        <a href="jiangkangbaojian.html">健康保健</a>
+                        <a href="zhongyiyuansheng.html">中医养生</a>
+                    </div>
+                </li>
+                <li onmouseover="o_navbox(6)" onmouseout="c_navbox(6)">
+                    <a href="kangfuxinsheng.html">康复中心</a>
+
+                    <div id="nav_box6" class="nav_box" style="display:none;">
+                        <em></em>
+      <span class="nav_img">
+                                    <a href="kangfuxinsheng.html">
+                                        <img src="images/t7.jpg">
+                                    </a></span>
+
+                        <a href="kangfuxinsheng.html">客户心声</a>
+                    </div>
+                </li>
+                <li onmouseover="o_navbox(7)" onmouseout="c_navbox(7)">
+                    <a href="lianxifangshi.html">联系我们</a>
+
+                    <div id="nav_box7" class="nav_box" style="display:none;">
+                        <em></em>
+                         <span class="nav_img">
+                            <a href="lianxifangshi.html">
+                                <img src="images/it.png" alt="北京桐君中医院">
+                            </a>
+                        </span>
+
+                        <p class="nav_list">
+                            <a href="lianxifangshi.html">联系方式</a>
+                            <a href="jiuyizhinan.html">就医指南</a>
+                        </p>
+                    </div></li></ul></div></div></div>
+
+<!--banner-->
+
+<div class="main-2">
+</div>
+<div class="main-3">
+    <div class="list_left">
+        <div id="sidebar-follow">
+            <div class="list_video">
+                <h2>北京桐君中医院</h2>
+                <p><div id="youkuplayer" style="width:261px;height:141px"></div>
+                <script type="text/javascript" src="http://player.youku.com/jsapi">
+                    player = new YKU.Player('youkuplayer',{
+                        styleid: '0',
+                        client_id: 'YOUR YOUKUOPENAPI CLIENT_ID',
+                        vid: 'XOTAwOTI1OTEy'
+                    });
+                </script></p>
+            </div>
+            <!--list咨询-->
+            <div class="zixunBd">
+                <img src="images/second/menzhen.jpg">
+                <dl class="zixunBd-c1">
+                    <dd><a href="http://pft.zoosnet.net/LR/Chatpre.aspx?id=PFT93313831&lng=cn"></a></dd>
+                    <dt><a href="http://pft.zoosnet.net/LR/Chatpre.aspx?id=PFT93313831&lng=cn">在线咨询</a></dt>
+                </dl>
+                <dl class="zixunBd-c2">
+                    <dd><a href="http://pft.zoosnet.net/LR/Chatpre.aspx?id=PFT93313831&lng=cn"></a></dd>
+                    <dt><a href="http://pft.zoosnet.net/LR/Chatpre.aspx?id=PFT93313831&lng=cn">网上预约</a></dt>
+                </dl>
+                <dl class="zixunBd-c3">
+                    <dd><a href="http://pft.zoosnet.net/LR/Chatpre.aspx?id=PFT93313831&lng=cn"></a></dd>
+                    <dt><a href="http://pft.zoosnet.net/LR/Chatpre.aspx?id=PFT93313831&lng=cn">QQ咨询</a></dt>
+                </dl>
+            </div>
+        </div>
+
+        <!--垂直下拉多级菜单-->
+        <script type="text/javascript">
+            $(document).ready(function (){
+                $(".menu ul li").menu();
+            });
+        </script>
+        <div id="content">
+            <div class="menu">
+                <ul>
+                    <li><a class="active" href="javascript:;">医院概况</a>
+                        <ul style="display: block;">
+                            <li><a href="yiyuanjianjie.html">医院简介</a></li>
+                            <li><a href="yuanchangzhici.html">院长致辞</a></li>
+                            <li><a href="qiyuan.html">起源追溯</a></li>
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">新闻中心</a>
+                        <ul>
+                            <li><a href="wutongyuanbao.html">桐君院报</a></li>
+                            <li><a href="xinwendongtai.html">新闻动态</a></li>
+                            <li><a href="meitibaodao.html">媒体报道</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">特色诊疗</a>
+                        <ul>
+                            <li><a href="weiai.html">各类癌症</a></li>
+                            <li><a href="gutouhuaisi.html">股骨头坏死</a></li>
+                            <li><a href="leifengshi.html">类风湿</a></li>
+                            <li><a href="shenbingzonghengzheng.html">肾病综合症</a></li>
+                            <li><a href="yiyuzheng.html">抑郁症</a></li>
+                            <li><a href="buyunbuyu.html">不孕不育</a></li>
+                            <li><a href="hongbanlangzheng.html">红斑狼症</a></li>
+                            <li><a href="feiai.html">胃瘤</a></li>
+                            <li><a href="linbaliu.html">淋巴瘤</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">科学研究</a></li>
+                    <li><a href="javascript:;">健康保健</a>
+                        <ul>
+                            <li><a href="jiangkangbaojian.html">健康保健</a></li>
+                            <li><a href="zhongyiyuansheng.html">中医养生</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">康复中心</a>
+                        <ul><li><a href="kangfuxinsheng.html">客户心声</a></li></ul></li>
+                    <li><a href="javascript:;">联系我们</a>
+                        <ul>
+                            <li><a href="lianxifangshi.html">联系方式</a></li>
+                            <li><a href="jiuyizhinan.html">就医指南</a></li>
+                        </ul></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="list_right">
+        <div class="position">	您所在的位置：<a href="/">主页</a> &gt;<a href="/about/dzjs/">医院环境</a> &gt; </div>
+
+    </div>
+    <div class="list_aleft"><h1>医院环境</h1>
+
+        <div class="lightBox">
+            <ul>
+                <li><img src='./images/jquery/images/big/1.jpg' _title='床房'></li>
+
+                <li><img src='./images/jquery/images/big/2.jpg' _title='药房'></li>
+
+                <li><img src='./images/jquery/images/big/3.jpg' _title='北京桐君中医院'></li>
+
+                <li><img src='./images/jquery/images/big/4.jpg' _title='北京桐君中医院'></li>
+
+                <li><img src='./images/jquery/images/big/5.jpg' _title='北京桐君中医院'></li>
+                <li><img src='./images/jquery/images/big/6.jpg' _title='北京桐君中医院'></li>
+                <li><img src='./images/jquery/images/big/7.jpg' _title='北京桐君中医院'></li>
+                <li><img src='./images/jquery/images/big/8.jpg' _title='北京桐君中医院'></li>
+                <li><img src='./images/jquery/images/big/9.jpg' _title='北京桐君中医院'></li>
+                <li><img src='./images/jquery/images/big/10.jpg' _title='北京桐君中医院'></li>
+                <li><img src='./images/jquery/images/big/11.jpg' _title='北京桐君中医院'></li>
+                <li><img src='./images/jquery/images/big/12.jpg' _title='北京桐君中医院'></li>
+                <li><img src='./images/jquery/images/big/13.jpg' _title='北京桐君中医院'></li>
+                <li><img src='./images/jquery/images/big/14.jpg' _title='北京桐君中医院'></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+</div></div></div>
+
+
+
+
+<div class="Talbe">
+    <ul class="Group">
+        <li class="Tsb TsbSelected">权威机构</li>
+        <li class="Tsb">医院风采</li>
+    </ul>
+    <div class="TableGroup">
+        <div class="Tablebox TableboxSelected">
+            <ul>
+                <img src="images/flink_img1.jpg" alt=""/>
+            </ul>
+        </div>
+        <div class="Tablebox"><img src="images/flink_img2.jpg" alt=""/></div>
+    </div>
+</div>
+</div>
+<!--footer-->
+<div class="footer">
+    <div class="box">
+        <div class="boxlogo">
+            <img src="images/logo2.png">
+            <p>全国咨询热线：<b>010-61241175 </b>(24小时为您服务）&nbsp;邮箱：tongjunzyy@163.com
+            </p>
+            <p>医院地址：北京市大兴区黄村镇刘村通黄路12号 </p>
+        <pre>乘车路线：地铁坐四号线到黄村西大街C口出，乘35，13路南线，兴29.兴31，20，26公交车至刘村加油站即到
+        （或乘至刘村站回行500米即到）</pre>
+            <p>京ICP备10069805号 北京桐君中医院版权所有</p>
+            <p>本网站的信息内容仅供参考，不能作为诊断及医疗的依据</p>
+
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $(".nav_box").hide();
+        $("#xy").bind("mouseover",function () {
+            $(this).find(".nav_box").show();
+        }).bind("mouseout", function () {
+            $(this).find(".nav_box").hide();
+        })
+    });
+
+    $("li.Tsb").mouseover(function(e){
+        $(this).addClass("TsbSelected").siblings().removeClass("TsbSelected");
+        var index=$(this).index();
+        var $content=$(this).parent().next().children("div");
+        $content.removeClass("TableboxSelected").eq(index).addClass("TableboxSelected")
+    })
+
+</script>
+
+
+<script>
+/*
+ *  author:涛涛
+ *  date:2013/8/22
+ *  homePage:http://www.webrhai.com
+ */
+(function(win){
+    var lightBox={};
+    lightBox.init=function(elem){
+        this.elem=this.$$('lightBox')[0];
+        this.aImages=this.elem.getElementsByTagName('img');
+        this.index=this.maxH=0;
+        this.len=this.aImages.length;
+        this.showPopup();
+    };
+    //============显示弹出层
+    lightBox.showPopup=function(){
+        var self=this,
+                img=this.aImages;
+        for(var i=0;i<this.len;i++){
+            img[i].index=i;
+            img[i].onclick=function(){
+                self.maxH=0;
+                self.index=this.index;
+                self.createPopup(this.src,this.getAttribute('_title'));
+            }
+        }
+    };
+    //===========class获取元素
+    //params  s 类名
+    //params  t 节点名
+    //params  p  父辈以上节点 dom对象
+    lightBox.$$=function(s,t,p){
+        var aElement=(p||document).getElementsByTagName(t||'*'),
+                reg=new RegExp('(^|\\s)'+s+'(\\s|$)'),
+                aResult=[];
+        for(var i=0;i<aElement.length;i++){
+            reg.test(aElement[i].className) && aResult.push(aElement[i]);
+        };
+        return aResult;
+    };
+    //==============创建弹出层展示
+    //params   src  图片路径
+    //params title  显示文字
+    lightBox.createPopup=function(src,title){
+        var oPopup=document.createElement('div');//弹出层外框
+        var oMask=document.createElement('div');//遮罩
+        var oPrev=document.createElement('div');//上按钮
+        var oNext=document.createElement('div');//下按钮
+        var oBottom=document.createElement('div');//底部盒子
+        var oTitle=document.createElement('div');//底部文字盒子
+        var oTitleTxt=document.createElement('div');
+        var oClose=document.createElement('div');//关闭
+        var oImg=document.createElement('img');//图片
+
+        oMask.className='mask';
+        oPopup.className='popup';
+        oPrev.className='prev btn';
+        oNext.className='next btn';
+        oBottom.className='popupBottom';
+        oTitle.className='popupTitle';
+        oTitleTxt.className='popupTitleTxt';
+        oClose.className='popupClose';
+
+        oTitleTxt.innerHTML=title || '';
+
+        var  vw=document.documentElement.clientWidth,
+                vh=document.documentElement.clientHeight;
+        oPopup.style.margin='0';
+        oPopup.style.left=(vw-320)/2+'px';
+        oPopup.style.top=(vh-240)/2+'px';
+
+        oTitle.appendChild(oTitleTxt);
+        oBottom.appendChild(oClose);
+        oBottom.appendChild(oTitle);
+        oPopup.appendChild(oPrev);
+        oPopup.appendChild(oNext);
+        oPopup.appendChild(oImg);
+        oPopup.appendChild(oBottom);
+        document.body.appendChild(oMask);
+        document.body.appendChild(oPopup);
+
+        var self=this;
+        oImg.onload=function(){
+            var w=this.width,docH=self.getFullHeight();
+            var oldw=self.css(oPopup,'width'),oldh=self.css(oPopup,'height');
+            oBottom.style.width=w+'px';
+            oPopup.style.height='auto';
+            oPopup.style.width='auto';
+            oPopup.style.opacity=0;
+            oPopup.style.filter='alpha(opacity:0)';
+            oMask.style.height=docH+'px';
+            var h=oPopup.clientHeight;
+            w=oPopup.clientWidth;
+            oPopup.style.height=oldh;
+            oPopup.style.width=oldw;
+            oBottom.style.display=oImg.style.display='none';
+            self.move(oMask,{opacity:60},5);
+            self.move(oPopup,{opacity:100,height:h,width:w,left:parseInt((vw-w)/2),top:parseInt((vh-h)/2)},5,function(){
+                oBottom.style.display=oImg.style.display='block';
+            });
+        };
+        oImg.src=src;
+
+        this.prev=oPrev;
+        this.next=oNext;
+        this.close=oClose;
+        this.img=oImg;
+        this.txt=oTitleTxt;
+        this.p=oPopup;
+
+
+        this.mask=oMask;
+        this.nexts();
+        this.prevs();
+        this.stopPropagation();
+        this.closes();
+        this.mouseWheels();
+    };
+    //==============鼠标滚轮
+    lightBox.mouseWheels=function(){
+        this.addEvent(document,'mousewheel',wheel);
+        this.addEvent(document,'DOMMouseScroll',wheel);
+        var self=this;
+
+        function wheel(e){
+            self.maxH=Math.max(self.p.clientHeight,self.maxH);
+            var ev=window.event||e,flag=true,
+                    h=self.p.clientHeight,w=self.p.clientWidth,
+                    l=self.p.offsetLeft,t=self.p.offsetTop;
+            //FF detail 往上小于0,往下大于0;
+            //IE wheelDelta 往上大于0,往下小于0
+            flag=ev.wheelDelta ? ev.wheelDelta<0 : ev.detail>0;
+
+            switch(flag)
+            {
+                //往下
+                case true:
+                    if(h<150 || w<200)return;
+                    h-=20;
+                    w-=20;
+                    l+=10;
+                    t+=10;
+                    break;
+                default :  //往上
+                    if(h<self.maxH){
+                        h+=20;
+                        w+=20;
+                        l-=10;
+                        t-=10;
+                    }
+            };
+
+            self.css(self.p,'height',h);
+            self.css(self.p,'left',l);
+            self.css(self.p,'width',w);
+            self.css(self.p,'top',t);
+            ev.preventDefault && ev.preventDefault();
+            return false;
+        }
+    };
+    //==============阻止冒泡
+    lightBox.stopPropagation=function(){
+        this.elem.onclick=this.p.onclick=function(ev){
+            var e=window.event||ev;
+            e.stoppropagation ? e.stopPropagation() :(e.cancelBubble=true);
+        }
+    };
+    //==============绑定事件
+    //params  o dom对象
+    //params  type 事件类型
+    //params  fn   事件函数
+    lightBox.addEvent=function(o,type,fn){
+        return o.addEventListener ? o.addEventListener(type,fn,false) : o.attachEvent('on'+type,fn);
+    };
+    //==============解除事件绑定
+    lightBox.removeEvent=function(o,type,fn){
+        return o.detachEvent ? o.detachEvent('on'+type,fn) : o.removeEventListener(type,fn);
+    };
+    //==============关闭
+    lightBox.closes=function(){
+        var self=this;
+        document.onclick=this.close.onclick=function(){
+            self.move(self.mask,{opacity:0},5,function(){
+                document.body.removeChild(self.mask);
+            });
+            document.body.removeChild(self.p);
+        };
+    };
+    //==============点击上一张
+    lightBox.prevs=function(){
+        var self=this;
+        this.prev.onclick=function(){
+            var index=--self.index;
+            self.maxH=0;
+            if(index<0){
+                index=self.index=self.len-1;
+            }
+            self.img.src=self.aImages[index].src;
+            self.txt.innerHTML=self.aImages[index].getAttribute('_title');
+        }
+    };
+    //==============点击下一张
+    lightBox.nexts=function(){
+        var self=this;
+        this.next.onclick=function(){
+            var index=++self.index;
+            self.maxH=0;
+            if(index>=self.len){
+                index=self.index=0;
+            }
+            self.img.src=self.aImages[index].src;
+            self.txt.innerHTML=self.aImages[index].getAttribute('_title');
+        }
+    };
+    //=============缓冲运动
+    //params  o    dom对象
+    //params  json 散列表
+    //params  fx   Boolean值
+    //params  fn   回调函数,可选
+    lightBox.move=function(o,json,fx,fn){
+        var self=this;
+        o.timer && clearInterval(o.timer);
+        o.timer=setInterval(function(){
+            var bStop=true;
+            var cur=0;
+            for(var attr in json){
+                cur=attr=='opacity' ? parseInt(parseFloat(self.css(o,attr)).toFixed(2)*100):parseInt(self.css(o,attr));
+                var speed=(json[attr]-cur)/fx;
+                speed=speed>0?Math.ceil(speed):Math.floor(speed);
+                if(attr=='opacity'){
+                    o.style.filter='alpha(opacity:'+(speed+cur)+')';
+                    o.style.opacity=(speed+cur)/100;
+                }else{
+                    o.style[attr]=(cur+speed)+'px';
+                }
+                if(cur!=json[attr]){
+                    bStop=false;
+                }
+                if(bStop){
+                    clearInterval(o.timer);
+                    (typeof fn=='function')&&fn();
+                }
+            }
+        },30)
+    };
+    //=============获取元素样式
+    //params  o    dom对象
+    //params  attr 属性
+    lightBox.css=function(o,attr,val){
+        if(arguments.length==2){
+            return o.currentStyle ? o.currentStyle[attr] : getComputedStyle(o,false)[attr];
+        }
+        else
+        {
+            o.style[attr]=val+'px';
+        }
+
+    };
+    //=============获取页面高度
+    lightBox.getFullHeight=function(){
+        var sh=document.body.scrollHeight,
+                ch=document.documentElement.clientHeight;
+        return  sh>ch? sh : ch;
+    };
+    win.lightBox=lightBox;
+})(window);
+lightBox.init();
+</script>
+
+
+
+<!--请将以下码嵌入到您网页源代码的最后面，通常是</body></HTML>之后,这样在服务器升级维护的时候也不会影响您的网页打开呈现速度。-->
+<script>
+    <!--
+    var LiveAutoInvite0 = '您好，来自%IP%的朋友';
+    var LiveAutoInvite1 = '来自首页的对话';
+    var LiveAutoInvite2 = ' 网站商务通 主要功能：<br>1、主动邀请<br>2、即时沟通<br>3、查看即时访问动态<br>4、访问轨迹跟踪<br>5、内部对话<br>6、不安装任何插件也实现双向文件传输<br><br><b>如果您有任何问题请接受此邀请以开始即时沟通</b>';
+    //-->
+</script>
+<script src="http://pft.zoosnet.net/JS/LsJS.aspx?siteid=PFT93313831&float=1&lng=cn"></script>
+</body>
+</html>
